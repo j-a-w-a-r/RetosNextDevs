@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextDevs Reto de la semana #2 - Pilas (LIFO)</title>
+    <script src="validarPila.js"></script>
+</head>
+
+<body>
+    <h1>NextDevs Reto de la semana #2 - Pilas (LIFO)</h1>
+
+    <h2>Paréntesis bien puestos</h2>
+    <p>Introduce los símbolos (), [], {}. Si se introducen en el orden adecuado</p>
+    <p>a la correspondencia de apertura y cierre de las pilas, o no,</p>
+    <p>se validará y se justificará dicha validación.</p>
+    <br>
+
+    <form onsubmit="validarPila(event)">
+        <label for="texto"><strong>Introduce los símbolos (), [] ó {}:</strong></label>
+        <input id="texto" type="text" required/>
+        <input type="submit" value="Validar Pila"/>
+    </form>
+
+    <div id="tabla"></div>
+</body>
+
+</html>
